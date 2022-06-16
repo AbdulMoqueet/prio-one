@@ -6,7 +6,7 @@ const YourChoice = () => {
     return (
         <Box py="80px" sx={{position: "relative"}}>
 
-            <Container>
+            <Container >
 
 
 
@@ -57,7 +57,7 @@ const YourChoice = () => {
                         <Box sx={{
                             position: "absolute",
                             left: 0,
-                            bottom: "-70px"
+                            bottom: "-40px"
                         }} component='img' src='./hand_with_meds.png' />
 
                     </Grid>

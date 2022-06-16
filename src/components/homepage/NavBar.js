@@ -30,7 +30,7 @@ const NavBar = ({linkStyle, buttonStyle, dividerStyle}) => {
             gap: 3
         }}>
             <CustomLink sx={linkStyle} to="/" variant='h6'>Prio.one</CustomLink>
-            <CustomLink sx={linkStyle} to="#">Unser Service</CustomLink>
+            <CustomLink sx={linkStyle} to="/products">Unser Service</CustomLink>
             <Divider sx={dividerStyle} />
             <CustomLink sx={linkStyle} to="/products">Über uns</CustomLink>
             <Divider sx={dividerStyle} />

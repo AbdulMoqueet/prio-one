@@ -5,7 +5,7 @@ import Heading from '../Typo/Heading'
 const LoveMore = () => {
     return (
         <Box py="80px" mt="100px">
-            <Container>
+            <Container >
 
                 <Heading text="Love more, stress less. So geht’s" />
 

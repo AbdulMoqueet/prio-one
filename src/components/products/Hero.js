@@ -9,7 +9,7 @@ import AnimatedButton from '../buttons/AnimatedButton'
 const Hero = () => {
     return (
         <Box sx={{ position: "relative"}}>
-            <Container>
+            <Container >
                 <NavBar
                     linkStyle={{ color: "#000" }}
                     dividerStyle={{ background: "#000" }}

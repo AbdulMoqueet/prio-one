@@ -6,7 +6,7 @@ import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
 
 import AnimatedButton from '../buttons/AnimatedButton'
 
-const Care = () => {
+const SocialImpact = () => {
 
     const [progressWidth, setProgressWidth] = useState(25);
 
@@ -33,9 +33,11 @@ const Care = () => {
                     <Grid item xs={12} md={6}>
 
                         <Box>
-                            <Typography mb={3} color="#1C2B49B2">FÜRSORGE IN UNSERER DNA</Typography>
-                            <Typography fontSize="28px">Unsere oberste Priorität:</Typography>
-                            <Typography mb={3} fontSize="28px">du und deine Gesundheit!</Typography>
+                            <Typography mb={3} color="#1C2B49B2">SOCIAL IMPACT</Typography>
+                            <Typography color="#1C2B49" fontSize="28px">Mit jeder Bestellung </Typography>
+                            <Typography color="#1C2B49" fontSize="28px">spenden wir 1,50 EUR an ein</Typography>
+                            <Typography color="#1C2B49" fontSize="28px">Frauengesundheitsprojekt</Typography>
+                            <Typography mb={4} color="#1C2B49" fontSize="28px">in Malawi.</Typography>
 
 
 
@@ -43,17 +45,14 @@ const Care = () => {
                                 width: "400px",
                                 color: "#1C2B49B2",
                                 lineHeight: "1.8"
-                            }}>Jahrelange Erfahrung ist es, die den Rund-um-Sorglos-Service unseres medizinischen Teams ermöglicht: über 10.000 Patientinnen hilft das Team jedes Jahr. Und wir sind nur eine Nachricht entfernt! Wir haben ein offenes Ohr – für deine Periode, deine Nachwuchspläne, deine Nebenwirkungen… und freuen uns immer über einen prall gefüllten Briefkasten.</Typography>
+                            }}>Plan International has a bold new ambition to work with 100 million girls over the next 5 years to transform their lives by supporting them to learn, lead, decide and thrive.</Typography>
 
-                            <AnimatedButton
-                                text="Triff’ das Team"
-                                iconSize="24px"
-                                sx={{
-                                    background: "#DAA49A4D",
-                                    color: "#F46853",
-                                    "&:hover": { background: "#F46853", color: "#fff" }
-                                }}
-                            />
+                            <Typography sx={{
+                                width: "400px",
+                                color: "#1C2B49B2",
+                                lineHeight: "1.8",
+                                marginTop: "30px"
+                            }}>When girls, young people and activists come together to take collective action as civil society, they are better able to demand and influence change. We focus our efforts on equality, inclusion and diversity. </Typography>
 
                         </Box>
 
@@ -72,31 +71,31 @@ const Care = () => {
                             <Slider className='care-slider' {...settings}>
                                 <div className='care-slider__slide' >
                                     <img className='care-slider__img'
-                                        src="./product_slider__11.png"
+                                        src="./social-impact__1.png"
                                         alt=""
                                     />
                                 </div>
                                 <div className='care-slider__slide'>
                                     <img className='care-slider__img'
-                                        src="./product_slider__11.png"
+                                        src="./social-impact__1.png"
                                         alt=""
                                     />
                                 </div>
                                 <div className='care-slider__slide'>
                                     <img className='care-slider__img'
-                                        src="./product_slider__11.png"
+                                        src="./social-impact__1.png"
                                         alt=""
                                     />
                                 </div>
                                 <div className='care-slider__slide'>
                                     <img className='care-slider__img'
-                                        src="./product_slider__11.png"
+                                        src="./social-impact__1.png"
                                         alt=""
                                     />
                                 </div>
                                 <div className='care-slider__slide'>
                                     <img className='care-slider__img'
-                                        src="./product_slider__11.png"
+                                        src="./social-impact__1.png"
                                         alt=""
                                     />
                                 </div>
@@ -119,12 +118,12 @@ const Care = () => {
 
         </Box>
     )
-    
+
 }
 
 const PrevIcon = ({ onClick, width }) => {
     return (
-        <div className = {width===25?"slick-icons slick-icons--left slick-icon__disabled": "slick-icons slick-icons--left"}>
+        <div className={width === 25 ? "slick-icons slick-icons--left slick-icon__disabled" : "slick-icons slick-icons--left"}>
             <RiArrowLeftSLine className="slick-icons--left" onClick={onClick} />
         </div>
     );
@@ -132,10 +131,10 @@ const PrevIcon = ({ onClick, width }) => {
 
 const NextIcon = ({ onClick, width }) => {
     return (
-        <div className={width === 100?"slick-icons slick-icons--right slick-icon__disabled":"slick-icons slick-icons--right"}>
+        <div className={width === 100 ? "slick-icons slick-icons--right slick-icon__disabled" : "slick-icons slick-icons--right"}>
             <RiArrowRightSLine className="slick-icons--right" onClick={onClick} />
         </div>
     );
 };
 
-export default Care
+export default SocialImpact

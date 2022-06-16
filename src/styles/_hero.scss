@@ -1,0 +1,23 @@
+.hero__arrow{
+    font-size: 20px;
+    animation: left-to-right 2s infinite;
+}
+
+@keyframes left-to-right {
+    50%{
+        transform: translateX(15px);
+    }
+}
+
+.hero__ball{
+    animation: top-to-down 2s infinite;
+}
+
+@keyframes top-to-down {
+    50%{
+        transform: translateY(30px);
+        color: rgb(113, 113, 113);
+    }
+
+    
+}

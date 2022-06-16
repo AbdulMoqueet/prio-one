@@ -1,0 +1,21 @@
+@import "hero.scss";
+@import "review.scss";
+@import "care.scss";
+@import "your_choice.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+
+body {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}

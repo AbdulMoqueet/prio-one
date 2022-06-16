@@ -1,0 +1,19 @@
+.your-choice__grid{
+    display: grid;
+    padding: 1rem;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+
+    
+}
+
+.your-choice__item{
+    background-color: #F6F7F8;
+    height: 50px;
+    display: grid;
+    place-items: center;
+}
+
+.your-choice__item img{
+    width: 50%;
+}

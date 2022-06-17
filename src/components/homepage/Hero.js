@@ -12,15 +12,16 @@ const Hero = () => {
             position: "relative",
             minHeight: "100vh",
             backgroundImage: "url(./hero.jpg)",
-            backgroundSize: "cover"
+            backgroundSize: "cover",
+            backgroundPosition: "center"
         }}>
 
-            <NavBar />
+            <NavBar mobileStyle={{color: "#fff"}} />
 
             <Container>
                 <Box sx={{
                     position: "absolute",
-                    top: "50%",
+                    top: {xs:"70%", md:"50%"},
                     color: "#fff",
                     transform: "translateY(-50%)"
                 }}>
@@ -28,7 +29,7 @@ const Hero = () => {
                     <Box>
 
                         <Box sx={{
-                            width: "550px"
+                            width: {xs:"360px", md:"550px"}
                         }}>
                             <Typography fontSize="30px" variant='p' component='p'>
                                 EINE ZUKUNFT IN DER DEINE GESUNDHEIT PRIO.ONE IST
@@ -49,8 +50,8 @@ const Hero = () => {
                     position: "absolute",
                     bottom: "60px",
                     width: "50px",
-                    display: "grid",
-                    placeItems: "center"
+                    placeItems: "center",
+                    display: {xs:"none", md:"grid"}
                 }}>
 
                     <Box sx={{

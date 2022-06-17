@@ -3,6 +3,7 @@ import React from 'react'
 
 import { BsInstagram } from 'react-icons/bs'
 import { FaFacebookF } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
 const FlexBox = styled(Box)({
     display: "flex",
@@ -12,7 +13,7 @@ const FlexBox = styled(Box)({
     gap: "20px"
 })
 
-const IconBox = styled(Box)({
+const IconBox = styled(Link)({
     background: "#1C2B49",
     height: "40px",
     width: "40px",
@@ -20,7 +21,14 @@ const IconBox = styled(Box)({
     placeItems: "center",
     color: "#fff",
     fontSize: "20px",
-    borderRadius: "50%"
+    borderRadius: "50%",
+    "&:hover": {background: "#F46853"}
+})
+
+const CustomLink = styled(Link)({
+    color: "#000",
+    textDecoration: "none",
+    "&:hover": {color: "#F46853"}
 })
 
 const Footer = () => {
@@ -38,9 +46,9 @@ const Footer = () => {
 
                         <FlexBox>
                             <Typography fontSize="20px">Company</Typography>
-                            <Typography>About Us</Typography>
-                            <Typography>Blogs</Typography>
-                            <Typography>Career</Typography>
+                            <CustomLink to="#">About Us</CustomLink>
+                            <CustomLink to="#">Blogs</CustomLink>
+                            <CustomLink to="#">Career</CustomLink>
                         </FlexBox>
 
                     </Grid>
@@ -52,11 +60,11 @@ const Footer = () => {
 
                             <Stack flexDirection="row" gap="10px">
 
-                                <IconBox>
+                                <IconBox to="#">
                                     <BsInstagram />
                                 </IconBox>
 
-                                <IconBox>
+                                <IconBox to="#">
                                     <FaFacebookF />
                                 </IconBox>
                             </Stack>
@@ -71,10 +79,10 @@ const Footer = () => {
 
                         <FlexBox>
                             <Typography fontSize="20px">Help</Typography>
-                            <Typography>FAQ</Typography>
-                            <Typography>Contacts</Typography>
-                            <Typography>Beschwerden</Typography>
-                            <Typography>Birth Control Brands</Typography>
+                            <CustomLink to="/faq">FAQ</CustomLink>
+                            <CustomLink to="#">Contacts</CustomLink>
+                            <CustomLink to="#">Beschwerden</CustomLink>
+                            <CustomLink to="#">Birth Control Brands</CustomLink>
                         </FlexBox>
 
                     </Grid>

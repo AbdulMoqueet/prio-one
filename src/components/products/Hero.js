@@ -8,16 +8,19 @@ import AnimatedButton from '../buttons/AnimatedButton'
 
 const Hero = () => {
     return (
-        <Box sx={{ position: "relative"}}>
+        <Box sx={{ position: "relative" }}>
+
+            <NavBar
+                linkStyle={{ color: "#000" }}
+                dividerStyle={{ background: "#000" }}
+                buttonStyle={{
+                    background: "#1C2B49",
+                    color: "#fff",
+                    "&:hover": { background: "#121c2f" }
+                }} />
+
             <Container >
-                <NavBar
-                    linkStyle={{ color: "#000" }}
-                    dividerStyle={{ background: "#000" }}
-                    buttonStyle={{
-                        background: "#1C2B49",
-                        color: "#fff",
-                        "&:hover": { background: "#121c2f" }
-                    }} />
+
 
                 <Grid container mt={4}>
 

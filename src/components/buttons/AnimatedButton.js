@@ -12,7 +12,8 @@ const StyledButton = styled(Button)({
     borderRadius: "50px",
     justifyContent: "space-between",
     alignItems: "center",
-    marginTop: "40px"
+    marginTop: "40px",
+    textTransform: "none"
 })
 
 const AnimatedButton = ({text, iconSize, sx}) => {

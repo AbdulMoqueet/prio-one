@@ -16,24 +16,33 @@ const Vision = () => {
             position: "absolute",
             left: { xl: "-250px", md: "-100px" },
             width: { xl: "200px", md: "80px" },
-            top: {xl: "-15px"}
+            top: {xl: "-15px"},
+            display: {xs:"none", md:"block"}
           }} component='img' src="./graph-line__1.svg" />
         </Container>
+
+        <Box sx={{
+            position: "absolute",
+            left: { xs: 0 },
+            width: { xl: "200px", md: "80px" },
+            top: {xs: "40px"},
+            display: {xs:"block", md:"none"}
+          }} component='img' src="./graph-line__1.svg" />
 
 
         <Box sx={{
           position: "absolute",
           transform: "rotate(-10deg)",
-          top: "0",
+          top: {xs:"400px", md:"0"},
           right: "-100px",
-          width: "90%",
+          width: {xs:"500px", md:"90%"},
           maxWidth: "1200px"
         }} component='img' src="./group.svg" />
 
-        <Typography color="#FFFFFFB2">HEALTHCARE OF THE FUTURE</Typography>
+        <Typography mt={{xs:4, md:0}} color="#FFFFFFB2">HEALTHCARE OF THE FUTURE</Typography>
 
         <Box sx={{
-          width: "500px",
+          width: {xs:"340px", md:"500px"},
           marginTop: "20px"
         }}>
 
@@ -64,21 +73,22 @@ const Vision = () => {
             width: "350px",
             position: "absolute",
             right: 0,
-            top: "100px"
+            top: "100px",
+            display: {xs:"none", md:"block"}
           }} component="img" src="./vision__3.png" />
 
           {/* Image 1 */}
           <Box sx={{
             width: "250px",
             position: "absolute",
-            right: "380px",
+            right: {xs:0, md:"380px"},
             top: "30px"
           }} component="img" src="./vision__1.png" />
 
           <Box sx={{
             width: "350px",
             position: "absolute",
-            right: "380px",
+            right: {xs:0, md:"380px"},
             top: "220px"
           }} component="img" src="./vision__2.png" />
 
@@ -89,7 +99,7 @@ const Vision = () => {
 
         <Box>
           <Box sx={{
-            width: "500px",
+            width: {xs:"340px", md:"500px"},
             marginTop: "20px"
           }}>
 
@@ -112,7 +122,7 @@ const Vision = () => {
           <Box sx={{
             position: "absolute",
             right: "0",
-            bottom: "80px"
+            bottom: {xs:"40px", md:"80px"}
           }} component='img' src="./graph-line.svg" />
 
         </Box>

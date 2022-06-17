@@ -6,7 +6,8 @@ const MyButton = styled(Button)({
     "&:hover": { background: "#dc5c49" },
     padding: "15px 60px",
     color: "#fff",
-    borderRadius: "50px"
+    borderRadius: "50px",
+    textTransform: "none"
 })
 
 const StyledButton = ({text, sx}) => {

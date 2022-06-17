@@ -2,6 +2,7 @@ import React from 'react'
 import Review from '../components/homepage/Review'
 import BigBox from '../components/products/BigBox'
 import Care from '../components/products/Care'
+import Control from '../components/products/Control'
 import Health from '../components/products/Health'
 import HelloRachel from '../components/products/HelloRachel'
 import Hero from '../components/products/Hero'
@@ -20,11 +21,12 @@ const Products = () => {
             <YourChoice />
             <Health />
             <HelloRachel />
-            {/* <Waiting />
+            <Waiting />
             <BigBox />
             <Review />
             <SocialImpact />
-            <Reasons /> */}
+            <Reasons />
+            <Control />
         </>
     )
 }

@@ -48,7 +48,7 @@ const NavBar = ({ linkStyle, buttonStyle, dividerStyle, mobileStyle }) => {
             </Stack>
 
             <Box sx={{
-                position: "absolute",
+                position: "fixed",
                 background: "#fff",
                 minHeight: "100vh",
                 width: "100vw",
@@ -135,6 +135,7 @@ const NavBar = ({ linkStyle, buttonStyle, dividerStyle, mobileStyle }) => {
                             background: "#fff",
                             display: "flex",
                             flexDirection: "column",
+                            gap: "10px",
                             padding: "20px",
                             borderRadius: "10px",
                             top: "30px",

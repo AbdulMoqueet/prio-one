@@ -42,7 +42,7 @@ const Footer = () => {
 
                 <Grid container>
 
-                    <Grid item xs={12} md={4} >
+                    <Grid item xs={12} md={4} mt={4} >
 
                         <FlexBox>
                             <Typography fontSize="20px">Company</Typography>
@@ -53,7 +53,7 @@ const Footer = () => {
 
                     </Grid>
 
-                    <Grid item xs={12} md={4}>
+                    <Grid item xs={12} md={4} mt={4}>
 
                         <FlexBox>
                             <Typography fontSize="20px">Find us on Social media</Typography>
@@ -75,7 +75,7 @@ const Footer = () => {
 
                     </Grid>
 
-                    <Grid item xs={12} md={4}>
+                    <Grid item xs={12} md={4} mt={4}>
 
                         <FlexBox>
                             <Typography fontSize="20px">Help</Typography>

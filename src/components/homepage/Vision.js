@@ -3,7 +3,7 @@ import React from 'react'
 
 const Vision = () => {
   return (
-    <Box sx={{
+    <Box id="vision" sx={{
       background: "#1C2B49",
       padding: "80px 0",
       position: "relative"

@@ -10,21 +10,26 @@ const Waiting = () => {
 
                 <Grid container>
 
-                    <Grid item paddingBottom={6} xs={12} md={4}>
-                        <Heading text="Was dich erwartet" />
+                    <Grid item paddingBottom={6} xs={12} md={4} display="flex" justifyContent="center">
 
-                        <Typography sx={{
-                            color: "#1C2B49B2",
-                            lineHeight: "1.9",
-                            marginTop: "40px",
-                            width: "350px"
-                        }}>
-                            Every month you will receive your birth control pills in a discreetly packaged box, along with a set of handpicked goodies designed for a personalised self-care experience.
-                        </Typography>
+                        <Box>
+                            <Heading text="Was dich erwartet" />
+
+                            <Typography sx={{
+                                color: "#1C2B49B2",
+                                lineHeight: "1.9",
+                                marginTop: "40px",
+                                width: "350px"
+                            }}>
+                                Every month you will receive your birth control pills in a discreetly packaged box, along with a set of handpicked goodies designed for a personalised self-care experience.
+                            </Typography>
+
+                        </Box>
+
 
                     </Grid>
 
-                    <Grid item xs={12} md={4}>
+                    <Grid item xs={12} md={4} display="flex" justifyContent="center">
 
                         <Box>
                             <Stack flexDirection="row" gap="10px" alignItems="center">
@@ -45,7 +50,7 @@ const Waiting = () => {
 
                     </Grid>
 
-                    <Grid item xs={12} md={4}>
+                    <Grid item xs={12} md={4} mt={{xs:4, md:0}} display="flex" justifyContent="center">
 
 
                         <Box>

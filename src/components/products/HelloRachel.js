@@ -42,11 +42,11 @@ const HelloRachel = () => {
 
                     </Grid>
 
-                    <Grid item xs={12} md={6} display="flex" justifyContent="flex-start">
+                    <Grid item xs={12} md={6} display="flex" justifyContent={{xs:"center", md:"flex-start"}}>
 
                         <Box sx={{
                             width: "400px",
-                            transform: "translateY(-80px)"
+                            transform: {md:"translateY(-80px)"}
                         }} component="img" src="./phone.png" />
 
                     </Grid>

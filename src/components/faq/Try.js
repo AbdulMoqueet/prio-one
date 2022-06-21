@@ -21,7 +21,7 @@ const Try = () => {
 
                             <Box sx={{
                                 width: "280px",
-                                marginRight: "40px"
+                                marginRight: {xs:0, md:"40px"}
                             }} component='img' src='./try__1.png' />
 
                             <Box sx={{
@@ -47,7 +47,7 @@ const Try = () => {
                         }}>
 
                             <Box sx={{
-                                marginLeft: "40px",
+                                marginLeft: {xs:0, md:"40px"},
                                 width: "400px"
                             }}>
                                 <Heading text="Ready to give us a try?" />

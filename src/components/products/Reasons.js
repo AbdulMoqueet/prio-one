@@ -10,7 +10,8 @@ const Reasons = () => {
             <Container>
 
                 <Heading text="Warum prio.one? 6 Gründe:" sx={{
-                    textAlign: "center"
+                    textAlign: "center",
+                    marginTop: "40px"
                 }} />
 
                 <Grid container mt={4}>

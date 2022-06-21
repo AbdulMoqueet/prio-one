@@ -7,7 +7,10 @@ const LoveMore = () => {
         <Box py="80px" mt="100px">
             <Container >
 
-                <Heading text="Love more, stress less. So geht’s" />
+
+                <Heading text="Love more, stress less. So geht’s" sx={{
+                    textAlign: "center"
+                }} />
 
                 <Grid container mt={4}>
 

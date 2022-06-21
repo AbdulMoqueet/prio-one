@@ -5,8 +5,6 @@ import { AiFillStar } from "react-icons/ai"
 import Slider from "react-slick";
 import ReviewItem from './ReviewItem';
 
-import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
-
 
 const StyledStar = styled(Box)({
     background: "#00B67A",
@@ -24,8 +22,34 @@ const Review = () => {
         dots: false,
         infinite: false,
         speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToShow: 4,
+        slidesToScroll: 4,
+
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: false,
+                    dots: false
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     };
 
     return (
@@ -46,7 +70,7 @@ const Review = () => {
                             gap: "10px",
                             margin: "10px 0"
                         }}>
-                            {[1, 2, 3, 4, 5].map(() => <StyledStar><AiFillStar /></StyledStar>)}
+                            {[1, 2, 3, 4, 5].map((item) => <StyledStar key={item}><AiFillStar /></StyledStar>)}
                         </Box>
 
                         <Typography sx={{ margin: "10px 0" }} fontSize="12px" color="#818181" textAlign="center">
@@ -82,50 +106,12 @@ const Review = () => {
 
                         <Slider className='review-slider' {...settings}>
 
-                            <div className="review__grid" >
-
-
-                                {[1, 2, 3, 4].map(() => <BrowserView>
-                                    <ReviewItem />
-                                </BrowserView>)}
-
-
-                                {[1, 2].map(() => <MobileView>
-                                    <ReviewItem />
-                                </MobileView>)}
-
-
-
-                            </div>
-
-                            <div className="review__grid" >
-
-                            {[1, 2, 3, 4].map(() => <BrowserView>
-                                    <ReviewItem />
-                                </BrowserView>)}
-
-
-                                {[1, 2].map(() => <MobileView>
-                                    <ReviewItem />
-                                </MobileView>)}
-
-                            </div>
-
-
-                            <div className="review__grid" >
-
-                            {[1, 2, 3, 4].map(() => <BrowserView>
-                                    <ReviewItem />
-                                </BrowserView>)}
-
-
-                                {[1, 2].map(() => <MobileView>
-                                    <ReviewItem />
-                                </MobileView>)}
-
-                            </div>
-
-                            {console.log('--->',isMobile)}
+                            {
+                                [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+                                    .map((item) => <div key={item} className="review__grid" >
+                                        <ReviewItem className="review__item" />
+                                    </div>)
+                            }
 
                         </Slider>
 

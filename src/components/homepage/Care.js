@@ -18,7 +18,6 @@ const Care = () => {
         nextArrow: <NextIcon width={progressWidth} />,
         prevArrow: <PrevIcon width={progressWidth} />,
         afterChange: (index) => {
-            console.log(index);
             setProgressWidth((100 / 4) * (index + 1));
         },
     };
@@ -62,53 +61,59 @@ const Care = () => {
 
 
                     <Grid item xs={12} md={6}>
+
                         <Box sx={{
-                            position: "absolute",
-                            right: "-5%",
-                            width: "600px"
+                            height: "400px"
                         }}>
+                            <Box sx={{
+                                position: "absolute",
+                                right: "-5%",
+                                width: "600px",
+                                bottom:"0"
+                            }}>
+
+                                <Slider className='care-slider' {...settings}>
+                                    <div className='care-slider__slide' >
+                                        <img className='care-slider__img'
+                                            src="./slider__1.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div className='care-slider__slide'>
+                                        <img className='care-slider__img'
+                                            src="./slider__1.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div className='care-slider__slide'>
+                                        <img className='care-slider__img'
+                                            src="./slider__1.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div className='care-slider__slide'>
+                                        <img className='care-slider__img'
+                                            src="./slider__1.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div className='care-slider__slide'>
+                                        <img className='care-slider__img'
+                                            src="./slider__1.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                </Slider>
+
+                                <div className="progress">
+                                    <div
+                                        style={{ width: `${progressWidth}%` }}
+                                        className="progress--fill"
+                                    ></div>
+                                </div>
 
 
-                            <Slider className='care-slider' {...settings}>
-                                <div className='care-slider__slide' >
-                                    <img className='care-slider__img'
-                                        src="./slider__1.png"
-                                        alt=""
-                                    />
-                                </div>
-                                <div className='care-slider__slide'>
-                                    <img className='care-slider__img'
-                                        src="./slider__1.png"
-                                        alt=""
-                                    />
-                                </div>
-                                <div className='care-slider__slide'>
-                                    <img className='care-slider__img'
-                                        src="./slider__1.png"
-                                        alt=""
-                                    />
-                                </div>
-                                <div className='care-slider__slide'>
-                                    <img className='care-slider__img'
-                                        src="./slider__1.png"
-                                        alt=""
-                                    />
-                                </div>
-                                <div className='care-slider__slide'>
-                                    <img className='care-slider__img'
-                                        src="./slider__1.png"
-                                        alt=""
-                                    />
-                                </div>
-                            </Slider>
-
-                            <div className="progress">
-                                <div
-                                    style={{ width: `${progressWidth}%` }}
-                                    className="progress--fill"
-                                ></div>
-                            </div>
-
+                            </Box>
 
                         </Box>
                     </Grid>
@@ -119,12 +124,12 @@ const Care = () => {
 
         </Box>
     )
-    
+
 }
 
 const PrevIcon = ({ onClick, width }) => {
     return (
-        <div className = {width===25?"slick-icons slick-icons--left slick-icon__disabled": "slick-icons slick-icons--left"}>
+        <div className={width === 25 ? "slick-icons slick-icons--left slick-icon__disabled" : "slick-icons slick-icons--left"}>
             <RiArrowLeftSLine className="slick-icons--left" onClick={onClick} />
         </div>
     );
@@ -132,7 +137,7 @@ const PrevIcon = ({ onClick, width }) => {
 
 const NextIcon = ({ onClick, width }) => {
     return (
-        <div className={width === 100?"slick-icons slick-icons--right slick-icon__disabled":"slick-icons slick-icons--right"}>
+        <div className={width === 100 ? "slick-icons slick-icons--right slick-icon__disabled" : "slick-icons slick-icons--right"}>
             <RiArrowRightSLine className="slick-icons--right" onClick={onClick} />
         </div>
     );

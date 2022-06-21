@@ -21,7 +21,7 @@ const Faq = () => {
       <Container>
 
         <Box sx={{
-          width: "600px",
+          width: {xs:"100%", sm:"600px"},
           margin: "auto",
           marginTop: "40px",
 
@@ -35,7 +35,7 @@ const Faq = () => {
 
 
         <Box sx={{
-          width: "800px",
+          width: {xs:"100%", sm:"800px"},
           margin: "auto",
           marginTop: "40px"
         }}>

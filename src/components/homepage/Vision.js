@@ -74,21 +74,21 @@ const Vision = () => {
             position: "absolute",
             right: 0,
             top: "100px",
-            display: {xs:"none", md:"block"}
+            display: {xs:"none", sm:"block"}
           }} component="img" src="./vision__3.png" />
 
           {/* Image 1 */}
           <Box sx={{
             width: "250px",
             position: "absolute",
-            right: {xs:0, md:"380px"},
+            right: {xs:0, sm:"380px"},
             top: "30px"
           }} component="img" src="./vision__1.png" />
 
           <Box sx={{
             width: "350px",
             position: "absolute",
-            right: {xs:0, md:"380px"},
+            right: {xs:0, sm:"380px"},
             top: "220px"
           }} component="img" src="./vision__2.png" />
 

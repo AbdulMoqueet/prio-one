@@ -8,11 +8,11 @@ const HelloRachel = () => {
 
                 <Grid container>
 
-                    <Grid item xs={12} md={6}>
+                    <Grid item py={4} xs={12} md={6} display="flex" justifyContent="center">
 
                         <Box sx={{
                             background: "#fff",
-                            width: "300px",
+                            width: {xs:"260px", sm:"300px"},
                             padding: "40px",
                             borderRadius: "40px"
                         }}>

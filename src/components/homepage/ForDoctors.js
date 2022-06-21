@@ -8,23 +8,21 @@ const ForDoctors = () => {
       <Container sx={{ position: "relative" }}>
 
         <Grid container>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={6} order={{xs:2, md:1}}>
             <Box sx={{
               width: "300px",
-              marginLeft: "70px"
+              marginLeft: {xs:"40px", md:"70px"},
+              marginTop: {xs:"80px", md:0}
             }} component='img' src='./review__1.png' alt="" />
             <Box sx={{
               position: "absolute",
               width: "200px",
               bottom: -70,
-              left: 0
+              left: {xs:"20px", md:0}
             }} component='img' src='./review__2.png' alt="" />
           </Grid>
 
-
-
-
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={6} order={{xs:1, md:2}}>
 
             <Box sx={{
               display: "flex",

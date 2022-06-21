@@ -12,7 +12,7 @@ const Try = () => {
 
                 <Grid container>
 
-                    <Grid item xs={12} md={6} >
+                    <Grid item xs={12} md={6} order={{xs:2, md:1}} >
 
                         <Box sx={{
                             textAlign: "right",
@@ -27,7 +27,7 @@ const Try = () => {
                             <Box sx={{
                                 position: "absolute",
                                 width: "200px",
-                                left: "120px",
+                                left: {xs:"-30px", sm:"300px", md:"120px"},
                                 bottom: "-70px"
                             }} component='img' src='./try__2.png' />
 
@@ -37,7 +37,7 @@ const Try = () => {
 
                     </Grid>
 
-                    <Grid item xs={12} md={6}>
+                    <Grid item pb={6} xs={12} md={6} order={{xs:1, md:2}}>
 
                         <Box sx={{
                             width: "100%",

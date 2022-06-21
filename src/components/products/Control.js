@@ -5,14 +5,14 @@ import Heading from '../Typo/Heading'
 
 const Control = () => {
     return (
-        <Box pt="120px" pb="80px">
+        <Box pt={{xs:"0px", sm:"120px"}} pb="80px">
 
             <Container>
 
                 <Box sx={{margin: "auto"}}>
 
                     <Box sx={{
-                        width: "500px",
+                        width: {xs:"300px", sm:"500px"},
                         margin: "auto",
                         textAlign: "center"
                     }}>

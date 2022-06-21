@@ -73,3 +73,20 @@
   color: #F3DED9;
   border: 1px solid #F3DED9;
 }
+
+@media only screen and (max-width: 500px) {
+  .slick-icons--left {
+    left: 14rem;
+  }
+
+  .slick-icons--right{
+    left: 19rem;
+  }
+
+  .progress {
+    left: 25rem;
+    width: 150px;
+    bottom: -3rem;
+  }
+
+}

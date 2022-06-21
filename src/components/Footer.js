@@ -22,13 +22,13 @@ const IconBox = styled(Link)({
     color: "#fff",
     fontSize: "20px",
     borderRadius: "50%",
-    "&:hover": {background: "#F46853"}
+    "&:hover": { background: "#F46853" }
 })
 
 const CustomLink = styled(Link)({
     color: "#000",
     textDecoration: "none",
-    "&:hover": {color: "#F46853"}
+    "&:hover": { color: "#F46853" }
 })
 
 const Footer = () => {
@@ -94,19 +94,19 @@ const Footer = () => {
                     marginTop: "30px",
                     textAlign: "center"
                 }}>
-                    <Typography fontSize="24px">
+                    <Typography fontSize={{xs:"24px", md:"24px"}}>
                         Medizinsche Aufsichtsbehörde
                     </Typography>
 
                     <Stack sx={{
-                        flexDirection: "row",
+                        flexDirection: { xs: "column", md: "row" },
                         justifyContent: "center",
                         gap: "30px",
                         alignItems: "center",
                         marginTop: "20px"
                     }}>
-                        <Box sx={{height: "60px"}} component='img' src='./care_quality.png' />
-                        <Box sx={{height: "80px"}} component='img' src='./arzten.png' />
+                        <Box sx={{ height: "60px" }} component='img' src='./care_quality.png' />
+                        <Box sx={{ height: "80px" }} component='img' src='./arzten.png' />
                     </Stack>
 
                 </Box>
@@ -117,15 +117,27 @@ const Footer = () => {
                 color: "#fff",
                 padding: "30px 0",
                 gap: "30px",
-                flexDirection: "row",
+                flexDirection: {xs:"column", md:"row"},
                 justifyContent: "center",
-                background: "#1C2B49"
+                background: "#1C2B49",
+                textAlign: "center"
             }} >
 
-                <Typography>Impressum</Typography>
-                <Typography>Datenschutz</Typography>
-                <Typography>AGB</Typography>
-                <Typography>© 2022 prio.one. All Rights reserved.</Typography>
+                <Box sx={{
+                    display: "flex",
+                    flexDirection: "row",
+                    justifyContent: "center",
+                    gap: "30px"
+                }}>
+                    <Typography>Impressum</Typography>
+                    <Typography>Datenschutz</Typography>
+                    <Typography>AGB</Typography>
+                </Box>
+
+                <Box>
+                    <Typography>© 2022 prio.one. All Rights reserved.</Typography>
+                </Box>
+
 
             </Stack>
 

@@ -31,14 +31,14 @@ const NavBar = ({ linkStyle, buttonStyle, dividerStyle, mobileStyle }) => {
     const closeNav = () => {
         setNavOpen(false)
         document.body.style.overflowY = 'auto'
-        window.scrollTo(0,0)
+        window.scrollTo(0, 0)
     }
 
     return (
         <Container>
 
             {/* Mobile */}
-            <Stack display={{xs:"flex", md:"none"}} sx={mobileStyle} pt={5} flexDirection="row" alignItems="center" justifyContent="space-between">
+            <Stack display={{ xs: "flex", md: "none" }} sx={mobileStyle} pt={5} flexDirection="row" alignItems="center" justifyContent="space-between">
 
                 <AiOutlineMenu fontSize="26px" onClick={openNav} />
 
@@ -54,7 +54,7 @@ const NavBar = ({ linkStyle, buttonStyle, dividerStyle, mobileStyle }) => {
                 width: "100vw",
                 left: 0,
                 top: 0,
-                zIndex: 1,
+                zIndex: 100,
                 display: navOpen ? "block" : "none"
             }}>
 
@@ -79,18 +79,18 @@ const NavBar = ({ linkStyle, buttonStyle, dividerStyle, mobileStyle }) => {
                     left: "50%",
                     transform: "translate(-50%, -50%)"
                 }}>
-                    <Stack sx={{color: "#000 !important"}} gap="20px" fontSize="30px">
+                    <Stack sx={{ color: "#000 !important" }} gap="20px" fontSize="30px">
 
                         <CustomLink sx={{
                             color: "#000",
                             "&:hover": "#F46853"
                         }} to="/" onClick={closeNav}>Home</CustomLink>
 
-                        <CustomLink 
-                        sx={{
-                            color: "#000",
-                            "&:hover": "#F46853"
-                        }} to="/products" onClick={closeNav}>Products</CustomLink>
+                        <CustomLink
+                            sx={{
+                                color: "#000",
+                                "&:hover": "#F46853"
+                            }} to="/products" onClick={closeNav}>Products</CustomLink>
 
                         <CustomLink sx={{
                             color: "#000",
@@ -121,13 +121,51 @@ const NavBar = ({ linkStyle, buttonStyle, dividerStyle, mobileStyle }) => {
                     <CustomLink sx={linkStyle} to="/faq">FAQs</CustomLink>
                     <Divider sx={dividerStyle} />
 
-                    <Box sx={{
+                    <Box className='mehr' sx={{
+                        position: "relative",
                         display: "flex",
                         alignItems: "center",
                         gap: "10px"
                     }}>
                         <CustomLink sx={linkStyle} to="#" >Mehr</CustomLink>
                         <FiChevronDown style={linkStyle} />
+
+                        <Box className='hoverBox' sx={{
+                            position: "absolute",
+                            background: "#fff",
+                            display: "flex",
+                            flexDirection: "column",
+                            padding: "20px",
+                            borderRadius: "10px",
+                            top: "30px",
+                            left: "-25px",
+                            width: "150px",
+                            display: "none"
+                        }}>
+
+                            <Box sx={{
+                                color: "#1C2B49CC",
+                                textDecoration: "none",
+                                cursor: "pointer",
+                                "&:hover": { color: "#F46853" }
+                            }}>Unser Blog</Box>
+
+                            <Box sx={{
+                                color: "#1C2B49CC",
+                                textDecoration: "none",
+                                cursor: "pointer",
+                                "&:hover": { color: "#F46853" }
+                            }}>Für Ärzte</Box>
+
+                            <Box sx={{
+                                color: "#1C2B49CC",
+                                textDecoration: "none",
+                                cursor: "pointer",
+                                "&:hover": { color: "#F46853" }
+                            }}>prio.one Community</Box>
+
+                        </Box>
+
                     </Box>
 
                 </Box>

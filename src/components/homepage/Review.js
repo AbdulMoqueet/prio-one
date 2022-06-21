@@ -3,6 +3,10 @@ import React from 'react'
 import { AiFillStar } from "react-icons/ai"
 
 import Slider from "react-slick";
+import ReviewItem from './ReviewItem';
+
+import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
+
 
 const StyledStar = styled(Box)({
     background: "#00B67A",
@@ -27,12 +31,12 @@ const Review = () => {
     return (
         <Box py="80px">
 
-            <Typography textAlign="center" fontSize="28px">From real customers</Typography>
+            <Typography mt={6} textAlign="center" fontSize="28px">From real customers</Typography>
 
             <Grid container mt={5}>
 
                 <Grid item xs={12} md={3}>
-                    <Box>
+                    <Box mb={{ xs: 4, md: 0 }}>
                         <Typography textAlign="center" fontSize="20px">Excellent</Typography>
 
                         <Box sx={{
@@ -64,6 +68,8 @@ const Review = () => {
                         </Typography>
 
                     </Box>
+
+
                 </Grid>
 
                 <Grid item xs={12} md={9}>
@@ -78,55 +84,48 @@ const Review = () => {
 
                             <div className="review__grid" >
 
-                                {[1, 2, 3, 4].map(() => <div className="review__item">
-                                    {[1, 2, 3, 4, 5].map(() => <AiFillStar style={{ color: "#00B67A", fontSize: "16px" }} />)}
-                                    <Typography fontWeight="500" my={1}>Andy E</Typography>
 
-                                    <Typography fontSize="14px" my={1}>Andy E (Success Manager at Freelancer.com) great it helped me. (helped me allot)</Typography>
+                                {[1, 2, 3, 4].map(() => <BrowserView>
+                                    <ReviewItem />
+                                </BrowserView>)}
 
-                                    <Stack flexDirection='row' alignItems='center' gap="10px">
-                                        <img src='./testimonial__1.png' alt="" />
-                                        <Typography fontWeight={500}>Andy E</Typography>
-                                    </Stack>
 
-                                </div>)}
+                                {[1, 2].map(() => <MobileView>
+                                    <ReviewItem />
+                                </MobileView>)}
+
+
 
                             </div>
 
                             <div className="review__grid" >
 
-                                {[1, 2, 3, 4].map(() => <div className="review__item">
-                                    {[1, 2, 3, 4, 5].map(() => <AiFillStar style={{ color: "#00B67A", fontSize: "16px" }} />)}
-                                    <Typography fontWeight="500" my={1}>Andy E</Typography>
+                            {[1, 2, 3, 4].map(() => <BrowserView>
+                                    <ReviewItem />
+                                </BrowserView>)}
 
-                                    <Typography fontSize="14px" lineHeight="1.8" my={1}>Andy E (Success Manager at Freelancer.com) great it helped me. (helped me allot)</Typography>
 
-                                    <Stack flexDirection='row' alignItems='center' gap="10px">
-                                        <img src='./testimonial__1.png' alt="" />
-                                        <Typography fontWeight={500}>Andy E</Typography>
-                                    </Stack>
-
-                                </div>)}
+                                {[1, 2].map(() => <MobileView>
+                                    <ReviewItem />
+                                </MobileView>)}
 
                             </div>
 
 
                             <div className="review__grid" >
 
-                                {[1, 2, 3, 4].map(() => <div className="review__item">
-                                    {[1, 2, 3, 4, 5].map(() => <AiFillStar style={{ color: "#00B67A", fontSize: "16px" }} />)}
-                                    <Typography fontWeight="500" my={1}>Andy E</Typography>
+                            {[1, 2, 3, 4].map(() => <BrowserView>
+                                    <ReviewItem />
+                                </BrowserView>)}
 
-                                    <Typography fontSize="14px" my={1}>Andy E (Success Manager at Freelancer.com) great it helped me. (helped me allot)</Typography>
 
-                                    <Stack flexDirection='row' alignItems='center' gap="10px">
-                                        <img src='./testimonial__1.png' alt="" />
-                                        <Typography fontWeight={500}>Andy E</Typography>
-                                    </Stack>
-
-                                </div>)}
+                                {[1, 2].map(() => <MobileView>
+                                    <ReviewItem />
+                                </MobileView>)}
 
                             </div>
+
+                            {console.log('--->',isMobile)}
 
                         </Slider>
 

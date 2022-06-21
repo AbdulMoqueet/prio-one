@@ -21,3 +21,9 @@
 .review-slider .slick-prev.slick-disabled:before, .slick-next.slick-disabled:before{
     opacity: 0.3 !important;
 }
+
+@media only screen and (max-width: 500px) {
+    .review__grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

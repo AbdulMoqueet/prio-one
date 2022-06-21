@@ -90,19 +90,40 @@ const Hero = () => {
                     <Grid item xs={12} md={6}>
 
                         <Box sx={{
-                            position: "absolute",
-                            right: 0,
-                            top: 0,
-                            width: "400px",
-                            zIndex: 1
-                        }} component='img' src='./hand.png' />
+                            position: { xs: "relative", sm: "static" },
+                            width: "500px",
+                            height: "450px"
+                        }}>
 
-                        <Box sx={{
-                            position: "absolute",
-                            right: 0,
-                            bottom: "-100px",
-                            width: "500px"
-                        }} component='img' src='./box.png' />
+                            <Box sx={{
+                                position: "absolute",
+                                right: 0,
+                                top: 0,
+                                width: "400px",
+                                zIndex: 1,
+                                display: {xs:"none", sm:"block"}
+                            }} component='img' src='./hand.png' />
+
+
+                            <Box sx={{
+                                position: "absolute",
+                                left: "0",
+                                transform: "rotate(130deg) scaleY(-1)",
+                                top: "100px",
+                                width: "300px",
+                                zIndex: 1,
+                                display: {xs:"block", sm:"none"}
+                            }} component='img' src='./hand.png' />
+
+                            <Box sx={{
+                                position: "absolute",
+                                right: 0,
+                                bottom: "-100px",
+                                width: { xs: "100%", sm: "500px" }
+                            }} component='img' src='./box.png' />
+
+
+                        </Box>
 
                     </Grid>
 

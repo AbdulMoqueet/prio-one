@@ -10,7 +10,7 @@ const Waiting = () => {
 
                 <Grid container>
 
-                    <Grid item xs={12} md={4}>
+                    <Grid item paddingBottom={6} xs={12} md={4}>
                         <Heading text="Was dich erwartet" />
 
                         <Typography sx={{

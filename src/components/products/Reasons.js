@@ -72,7 +72,7 @@ const Reasons = () => {
 
                 <Grid container>
 
-                    <Grid item xs={12} md={6}>
+                    <Grid item mb={{xs:34, md:0}} xs={12} md={6}>
 
                         <Box sx={{
                             position: "relative",
@@ -86,7 +86,7 @@ const Reasons = () => {
                             <Box sx={{
                                 position: "absolute",
                                 width: "250px",
-                                left: "150px",
+                                left: {xs:0, sm:"150px"},
                                 bottom: "-220px",
                                 zIndex: -1
                             }} component='img' src='./reason__3.png' />

@@ -9,7 +9,7 @@ const BigBox = () => {
 
             <Container>
                 <Box sx={{
-                    width: "800px"
+                    width: {xs:"100%", md:"800px"}
                 }} component='img' src='./big_box.png' />
             </Container>
 

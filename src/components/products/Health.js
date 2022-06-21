@@ -20,8 +20,6 @@ const Health = () => {
                             <Typography fontSize="28px">Be part of a safe space</Typography>
                             <Typography mb={3} fontSize="28px">for female health</Typography>
 
-
-
                             <Typography sx={{
                                 width: "400px",
                                 color: "#1C2B49B2",
@@ -44,6 +42,7 @@ const Health = () => {
 
                     <Grid item xs={12} md={6} sx={{
                         display: "flex",
+                        marginTop: {xs: "100px", md:0},
                         justifyContent: "flex-end"
                     }}>
 
@@ -62,7 +61,8 @@ const Health = () => {
                                     paddingBottom: "30px",
                                     borderRadius: "15px",
                                     color:"#1C2B49B2",
-                                    background: "#fff"
+                                    background: "#fff",
+                                    display:{xs:"none", sm:"block"}
                                 }}>
 
                                     <Typography mb={4} fontSize="14px">Hat sonst noch jemand hier die folgenden Symptome?</Typography>
@@ -92,7 +92,6 @@ const Health = () => {
 
 
                                 <Box sx={{
-
                                     width: "300px",
                                     borderTopLeftRadius: "30px",
                                     borderTopRightRadius: "30px"

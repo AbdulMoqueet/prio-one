@@ -4,61 +4,75 @@ import AnimatedButton from '../buttons/AnimatedButton'
 
 const YourChoice = () => {
     return (
-        <Box py="80px" sx={{position: "relative"}}>
+        <Box py="80px" sx={{ position: "relative" }}>
 
             <Container >
-
-
 
                 <Grid container mt={4}>
 
                     <Grid item xs={12} md={6}>
 
                         <Box sx={{
-                            background: "#fff",
-                            height: "200px",
-                            width: "320px",
-                            borderRadius: "30px",
-                            border: "20px solid #FAFAFA"
+                            position: { xs: "relative", sm: "static" },
+                            height: "400px"
                         }}>
 
-                            <Typography pl={2} pt={2} color="#1C2B49E5">Bevorzugte Pillenmarke</Typography>
+                            <Box sx={{
+                                background: "#fff",
+                                height: "200px",
+                                width: "320px",
+                                borderRadius: "30px",
+                                border: "20px solid #FAFAFA"
+                            }}>
 
-                            <div className="your-choice__grid">
+                                <Typography pl={2} pt={2} color="#1C2B49E5">Bevorzugte Pillenmarke</Typography>
 
-                                <div className="your-choice__item">
-                                    <img src='./your_choice__1.png' />
+                                <div className="your-choice__grid">
+
+                                    <div className="your-choice__item">
+                                        <img src='./your_choice__1.png' />
+                                    </div>
+
+                                    <div className="your-choice__item">
+                                        <img src='./your_choice__2.png' />
+                                    </div>
+
+                                    <div className="your-choice__item">
+                                        <img src='./your_choice__3.png' />
+                                    </div>
+
+                                    <div className="your-choice__item">
+                                        <img src='./your_choice__4.png' />
+                                    </div>
+
+                                    <div className="your-choice__item">
+                                        <img src='./your_choice__5.png' />
+                                    </div>
+
+                                    <div className="your-choice__item">
+                                        <img src='./your_choice__6.png' />
+                                    </div>
+
                                 </div>
 
-                                <div className="your-choice__item">
-                                    <img src='./your_choice__2.png' />
-                                </div>
+                            </Box>
 
-                                <div className="your-choice__item">
-                                    <img src='./your_choice__3.png' />
-                                </div>
+                            <Box sx={{
+                                position: "absolute",
+                                left: 0,
+                                bottom: "-40px",
+                                display:{xs:"none", sm:"block"}
+                            }} component='img' src='./hand_with_meds.png' />
 
-                                <div className="your-choice__item">
-                                    <img src='./your_choice__4.png' />
-                                </div>
-
-                                <div className="your-choice__item">
-                                    <img src='./your_choice__5.png' />
-                                </div>
-
-                                <div className="your-choice__item">
-                                    <img src='./your_choice__6.png' />
-                                </div>
-
-                            </div>
+                            <Box sx={{
+                                position: "absolute",
+                                left: 0,
+                                bottom: "0px",
+                                width:"300px",
+                                display:{xs:"block", sm:"none"}
+                            }} component='img' src='./hand_with_meds.png' />
 
                         </Box>
-
-                        <Box sx={{
-                            position: "absolute",
-                            left: 0,
-                            bottom: "-40px"
-                        }} component='img' src='./hand_with_meds.png' />
 
                     </Grid>
 

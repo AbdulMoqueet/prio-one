@@ -18,7 +18,6 @@ const SocialImpact = () => {
         nextArrow: <NextIcon width={progressWidth} />,
         prevArrow: <PrevIcon width={progressWidth} />,
         afterChange: (index) => {
-            console.log(index);
             setProgressWidth((100 / 4) * (index + 1));
         },
     };
@@ -26,18 +25,18 @@ const SocialImpact = () => {
     return (
         <Box py="80px" position="relative">
 
-            <Container >
+            <Container>
 
                 <Grid container>
 
                     <Grid item xs={12} md={6}>
 
                         <Box>
-                            <Typography mb={3} color="#1C2B49B2">SOCIAL IMPACT</Typography>
-                            <Typography color="#1C2B49" fontSize="28px">Mit jeder Bestellung </Typography>
-                            <Typography color="#1C2B49" fontSize="28px">spenden wir 1,50 EUR an ein</Typography>
-                            <Typography color="#1C2B49" fontSize="28px">Frauengesundheitsprojekt</Typography>
-                            <Typography mb={4} color="#1C2B49" fontSize="28px">in Malawi.</Typography>
+                            <Typography mb={3} color="#1C2B49B2">FÜRSORGE IN UNSERER DNA</Typography>
+                            <Typography fontSize="28px">Mit jeder Bestellung </Typography>
+                            <Typography fontSize="28px">spenden wir 1,50 EUR an ein</Typography>
+                            <Typography fontSize="28px">Frauengesundheitsprojekt</Typography>
+                            <Typography mb={3} fontSize="28px">in Malawi.</Typography>
 
 
 
@@ -46,6 +45,7 @@ const SocialImpact = () => {
                                 color: "#1C2B49B2",
                                 lineHeight: "1.8"
                             }}>Plan International has a bold new ambition to work with 100 million girls over the next 5 years to transform their lives by supporting them to learn, lead, decide and thrive.</Typography>
+
 
                             <Typography sx={{
                                 width: "400px",
@@ -61,53 +61,59 @@ const SocialImpact = () => {
 
 
                     <Grid item xs={12} md={6}>
+
                         <Box sx={{
-                            position: "absolute",
-                            right: "-5%",
-                            width: "600px"
+                            height: "400px"
                         }}>
+                            <Box sx={{
+                                position: "absolute",
+                                right: "-5%",
+                                width: "600px",
+                                bottom: "0"
+                            }}>
+
+                                <Slider className='care-slider' {...settings}>
+                                    <div className='care-slider__slide' >
+                                        <img className='care-slider__img'
+                                            src="./social-impact__1.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div className='care-slider__slide'>
+                                        <img className='care-slider__img'
+                                            src="./social-impact__1.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div className='care-slider__slide'>
+                                        <img className='care-slider__img'
+                                            src="./social-impact__1.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div className='care-slider__slide'>
+                                        <img className='care-slider__img'
+                                            src="./social-impact__1.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div className='care-slider__slide'>
+                                        <img className='care-slider__img'
+                                            src="./social-impact__1.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                </Slider>
+
+                                <div className="progress">
+                                    <div
+                                        style={{ width: `${progressWidth}%` }}
+                                        className="progress--fill"
+                                    ></div>
+                                </div>
 
 
-                            <Slider className='care-slider' {...settings}>
-                                <div className='care-slider__slide' >
-                                    <img className='care-slider__img'
-                                        src="./social-impact__1.png"
-                                        alt=""
-                                    />
-                                </div>
-                                <div className='care-slider__slide'>
-                                    <img className='care-slider__img'
-                                        src="./social-impact__1.png"
-                                        alt=""
-                                    />
-                                </div>
-                                <div className='care-slider__slide'>
-                                    <img className='care-slider__img'
-                                        src="./social-impact__1.png"
-                                        alt=""
-                                    />
-                                </div>
-                                <div className='care-slider__slide'>
-                                    <img className='care-slider__img'
-                                        src="./social-impact__1.png"
-                                        alt=""
-                                    />
-                                </div>
-                                <div className='care-slider__slide'>
-                                    <img className='care-slider__img'
-                                        src="./social-impact__1.png"
-                                        alt=""
-                                    />
-                                </div>
-                            </Slider>
-
-                            <div className="progress">
-                                <div
-                                    style={{ width: `${progressWidth}%` }}
-                                    className="progress--fill"
-                                ></div>
-                            </div>
-
+                            </Box>
 
                         </Box>
                     </Grid>

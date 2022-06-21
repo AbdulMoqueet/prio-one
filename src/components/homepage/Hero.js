@@ -21,15 +21,16 @@ const Hero = () => {
             <Container>
                 <Box sx={{
                     position: "absolute",
-                    top: {xs:"70%", md:"50%"},
+                    top: {xs:"70%", sm:"60%", md:"50%"},
                     color: "#fff",
-                    transform: "translateY(-50%)"
+                    left: {sm:"50%", md:"auto"},
+                    transform: {xs: "translateY(-50%)", sm: "translateY(-50%) translateX(-50%)", md:"translateY(-50%) translateX(0)"}
                 }}>
 
                     <Box>
 
                         <Box sx={{
-                            width: {xs:"360px", md:"550px"}
+                            width: {xs:"360px", sm:"400px", md:"550px"}
                         }}>
                             <Typography fontSize="30px" variant='p' component='p'>
                                 EINE ZUKUNFT IN DER DEINE GESUNDHEIT PRIO.ONE IST

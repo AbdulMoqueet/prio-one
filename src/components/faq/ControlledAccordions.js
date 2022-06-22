@@ -19,7 +19,7 @@ export default function ControlledAccordions() {
     <div>
       <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
         <AccordionSummary
-          expandIcon={expanded ? <Collapse /> : <Expand />}
+          expandIcon={expanded === 'panel1' ? <Collapse /> : <Expand />}
           aria-controls="panel1bh-content"
           id="panel1bh-header"
         >
@@ -33,7 +33,7 @@ export default function ControlledAccordions() {
 
       <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
         <AccordionSummary
-          expandIcon={expanded ? <Collapse /> : <Expand />}
+          expandIcon={expanded === 'panel2' ? <Collapse /> : <Expand />}
           aria-controls="panel2bh-content"
           id="panel2bh-header"
         >
@@ -48,7 +48,7 @@ export default function ControlledAccordions() {
 
       <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
         <AccordionSummary
-          expandIcon={expanded ? <Collapse /> : <Expand />}
+          expandIcon={expanded === 'panel3' ? <Collapse /> : <Expand />}
           aria-controls="panel3bh-content"
           id="panel3bh-header"
         >
@@ -62,7 +62,7 @@ export default function ControlledAccordions() {
 
       <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
         <AccordionSummary
-          expandIcon={expanded ? <Collapse /> : <Expand />}
+          expandIcon={expanded === 'panel4' ? <Collapse /> : <Expand />}
           aria-controls="panel4bh-content"
           id="panel4bh-header"
         >
@@ -76,7 +76,7 @@ export default function ControlledAccordions() {
 
       <Accordion expanded={expanded === 'panel5'} onChange={handleChange('panel5')}>
         <AccordionSummary
-          expandIcon={expanded ? <Collapse /> : <Expand />}
+          expandIcon={expanded === 'panel5' ? <Collapse /> : <Expand />}
           aria-controls="panel5bh-content"
           id="panel5bh-header"
         >
@@ -91,7 +91,7 @@ export default function ControlledAccordions() {
 
       <Accordion expanded={expanded === 'panel6'} onChange={handleChange('panel6')}>
         <AccordionSummary
-          expandIcon={expanded ? <Collapse /> : <Expand />}
+          expandIcon={expanded === 'panel6' ? <Collapse /> : <Expand />}
           aria-controls="panel6bh-content"
           id="panel6bh-header"
         >
@@ -106,7 +106,7 @@ export default function ControlledAccordions() {
 
       <Accordion expanded={expanded === 'panel7'} onChange={handleChange('panel7')}>
         <AccordionSummary
-          expandIcon={expanded ? <Collapse /> : <Expand />}
+          expandIcon={expanded === 'panel7' ? <Collapse /> : <Expand />}
           aria-controls="panel7bh-content"
           id="panel7bh-header"
         >
@@ -120,7 +120,7 @@ export default function ControlledAccordions() {
       {/* ------------------------------------------- */}
       <Accordion sx={{ marginTop: "80px" }} expanded={expanded === 'panel8'} onChange={handleChange('panel8')}>
         <AccordionSummary
-          expandIcon={expanded ? <Collapse /> : <Expand />}
+          expandIcon={expanded === 'panel8' ? <Collapse /> : <Expand />}
           aria-controls="panel8bh-content"
           id="panel8bh-header"
         >
@@ -134,7 +134,7 @@ export default function ControlledAccordions() {
 
       <Accordion expanded={expanded === 'panel9'} onChange={handleChange('panel9')}>
         <AccordionSummary
-          expandIcon={expanded ? <Collapse /> : <Expand />}
+          expandIcon={expanded === 'panel9' ? <Collapse /> : <Expand />}
           aria-controls="panel9bh-content"
           id="panel9bh-header"
         >
@@ -147,7 +147,7 @@ export default function ControlledAccordions() {
 
       <Accordion expanded={expanded === 'panel10'} onChange={handleChange('panel10')}>
         <AccordionSummary
-          expandIcon={expanded ? <Collapse /> : <Expand />}
+          expandIcon={expanded === 'panel10' ? <Collapse /> : <Expand />}
           aria-controls="panel10bh-content"
           id="panel10bh-header"
         >
@@ -160,7 +160,7 @@ export default function ControlledAccordions() {
 
       <Accordion expanded={expanded === 'panel11'} onChange={handleChange('panel11')}>
         <AccordionSummary
-          expandIcon={expanded ? <Collapse /> : <Expand />}
+          expandIcon={expanded === 'panel11' ? <Collapse /> : <Expand />}
           aria-controls="panel11bh-content"
           id="panel11bh-header"
         >
@@ -173,7 +173,7 @@ export default function ControlledAccordions() {
 
       <Accordion expanded={expanded === 'panel12'} onChange={handleChange('panel12')}>
         <AccordionSummary
-          expandIcon={expanded ? <Collapse /> : <Expand />}
+          expandIcon={expanded === 'panel12' ? <Collapse /> : <Expand />}
           aria-controls="panel12bh-content"
           id="panel12bh-header"
         >
@@ -186,7 +186,7 @@ export default function ControlledAccordions() {
 
       <Accordion expanded={expanded === 'panel13'} onChange={handleChange('panel13')}>
         <AccordionSummary
-          expandIcon={expanded ? <Collapse /> : <Expand />}
+          expandIcon={expanded === 'panel13' ? <Collapse /> : <Expand />}
           aria-controls="panel13bh-content"
           id="panel13bh-header"
         >
@@ -199,7 +199,7 @@ export default function ControlledAccordions() {
 
       <Accordion expanded={expanded === 'panel14'} onChange={handleChange('panel14')}>
         <AccordionSummary
-          expandIcon={expanded ? <Collapse /> : <Expand />}
+          expandIcon={expanded === 'panel14' ? <Collapse /> : <Expand />}
           aria-controls="panel14bh-content"
           id="panel14bh-header"
         >

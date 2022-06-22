@@ -11,6 +11,7 @@ import Homepage from './pages/Homepage'
 import NotFound from "./pages/NotFound";
 import Products from "./pages/Products";
 import Faq from "./pages/Faq";
+import MobileFooter from "./components/MobileFooter";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
+      <MobileFooter />
     </BrowserRouter>
 
   )

@@ -9,7 +9,7 @@ const LoveMore = () => {
 
 
                 <Heading text="Love more, stress less. So geht’s" sx={{
-                    textAlign: "center"
+                    textAlign: {xs:"center", md:"left"}
                 }} />
 
                 <Grid container mt={4}>

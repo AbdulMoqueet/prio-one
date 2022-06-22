@@ -26,7 +26,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 100;
+  z-index: 10;
+  cursor: pointer;
 }
 
 .slick-icons--left,
@@ -52,9 +53,9 @@
 
 .progress {
   position: absolute;
-  bottom: -3.5rem;
-  left: 15rem;
-  width: 200px;
+  bottom: -3.2rem;
+  left: 12rem;
+  width: 320px;
   height: 2px;
   background-color: rgba(194, 90, 63, 0.2);
   ;

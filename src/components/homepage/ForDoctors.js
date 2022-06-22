@@ -8,21 +8,21 @@ const ForDoctors = () => {
       <Container sx={{ position: "relative" }}>
 
         <Grid container>
-          <Grid item xs={12} md={6} order={{xs:2, md:1}}>
+          <Grid item xs={12} md={6} order={{ xs: 2, md: 1 }}>
             <Box sx={{
               width: "300px",
-              marginLeft: {xs:"40px", md:"70px"},
-              marginTop: {xs:"80px", md:0}
+              marginLeft: { xs: "40px", md: "70px" },
+              marginTop: { xs: "80px", md: 0 }
             }} component='img' src='./review__1.png' alt="" />
             <Box sx={{
               position: "absolute",
               width: "200px",
               bottom: -70,
-              left: {xs:"20px", md:0}
+              left: { xs: "20px", md: 0 }
             }} component='img' src='./review__2.png' alt="" />
           </Grid>
 
-          <Grid item xs={12} md={6} order={{xs:1, md:2}}>
+          <Grid item xs={12} md={6} order={{ xs: 1, md: 2 }}>
 
             <Box sx={{
               display: "flex",
@@ -42,7 +42,7 @@ const ForDoctors = () => {
                 <AnimatedButton text='Doctor’s Page' iconSize='24px' sx={{
                   background: "#1C2B49",
                   color: "#fff",
-                  "&:hover": {background: "#121c2f"}
+                  "&:hover": { background: "#121c2f" }
                 }} />
 
               </Box>
@@ -55,7 +55,18 @@ const ForDoctors = () => {
 
         </Grid>
 
+        <Box sx={{
+          position: "absolute",
+          width: "100%",
+          marginTop: { xs: "20px", sm: "-30px" },
+          zIndex: -1
+        }} component='img' src='./review__3.png' />
+        
       </Container>
+
+
+
+
     </Box>
   )
 }

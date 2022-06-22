@@ -4,7 +4,7 @@ import AnimatedButton from '../buttons/AnimatedButton'
 
 const YourChoice = () => {
     return (
-        <Box py="80px" sx={{ position: "relative" }}>
+        <Box mt={6} py="80px" sx={{ position: "relative" }}>
 
             <Container >
 

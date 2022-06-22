@@ -4,6 +4,7 @@ import AnimatedButton from '../buttons/AnimatedButton'
 
 import { AiOutlineMessage } from 'react-icons/ai'
 import ProgressBar from '../utils/ProgressBar'
+import AnimatedIconBtn from '../buttons/AnimatedIconBtn'
 
 const Health = () => {
     return (
@@ -26,13 +27,12 @@ const Health = () => {
                                 lineHeight: "1.8"
                             }}>Additionally, to your pill, you will get access to a safe and open community space focused on female health issues. Connect with other women facing the same issues. Nothing is too small or taboo to be discussed. </Typography>
 
-                            <AnimatedButton
-                                text="Access Community"
+                            <AnimatedIconBtn
                                 iconSize="24px"
                                 sx={{
                                     background: "#DAA49A4D",
-                                    color: "#F46853",
-                                    "&:hover": { background: "#F46853", color: "#fff" }
+                                    color: "#c25a3f",
+                                    "&:hover": { background: "#c25a3f", color: "#fff" }
                                 }}
                             />
 

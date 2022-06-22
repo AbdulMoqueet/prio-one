@@ -5,6 +5,8 @@ import Slider from "react-slick";
 import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
 
 import AnimatedButton from '../buttons/AnimatedButton'
+import NextIcon from '../buttons/NextIcon';
+import PrevIcon from '../buttons/PrevIcon';
 
 const SocialImpact = () => {
 
@@ -126,21 +128,5 @@ const SocialImpact = () => {
     )
 
 }
-
-const PrevIcon = ({ onClick, width }) => {
-    return (
-        <div className={width === 25 ? "slick-icons slick-icons--left slick-icon__disabled" : "slick-icons slick-icons--left"}>
-            <RiArrowLeftSLine className="slick-icons--left" onClick={onClick} />
-        </div>
-    );
-};
-
-const NextIcon = ({ onClick, width }) => {
-    return (
-        <div className={width === 100 ? "slick-icons slick-icons--right slick-icon__disabled" : "slick-icons slick-icons--right"}>
-            <RiArrowRightSLine className="slick-icons--right" onClick={onClick} />
-        </div>
-    );
-};
 
 export default SocialImpact

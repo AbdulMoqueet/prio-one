@@ -5,7 +5,7 @@ import {Button, styled} from '@mui/material'
 const StyledButton = styled(Button)({
     background: "#F46853",
     "&:hover": { background: "#dc5c49" },
-    padding: "15px 30px",
+    padding: "20px 30px",
     color: "#fff",
     width: "270px",
     display: "flex",

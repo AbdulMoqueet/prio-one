@@ -20,13 +20,13 @@ const Try = () => {
                         }}>
 
                             <Box sx={{
-                                width: "280px",
+                                width: "300px",
                                 marginRight: {xs:0, md:"40px"}
                             }} component='img' src='./try__1.png' />
 
                             <Box sx={{
                                 position: "absolute",
-                                width: "200px",
+                                width: "220px",
                                 left: {xs:"-30px", sm:"300px", md:"120px"},
                                 bottom: "-70px"
                             }} component='img' src='./try__2.png' />

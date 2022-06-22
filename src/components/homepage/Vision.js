@@ -79,16 +79,16 @@ const Vision = () => {
 
           {/* Image 1 */}
           <Box sx={{
-            width: "250px",
+            width: "260px",
             position: "absolute",
-            right: {xs:0, sm:"380px"},
-            top: "30px"
+            right: {xs:"20px", sm:"380px"},
+            top: {xs:"30px", md:"20px"}
           }} component="img" src="./vision__1.png" />
 
           <Box sx={{
-            width: "350px",
+            width: {xs:"335px", md:"400px"},
             position: "absolute",
-            right: {xs:0, sm:"380px"},
+            right: {xs:"20px", sm:"380px"},
             top: "220px"
           }} component="img" src="./vision__2.png" />
 

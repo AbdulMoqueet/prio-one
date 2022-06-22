@@ -23,6 +23,12 @@
   margin: 0 -20px;
 }
 
+.review__grid{
+  background: #FAFAFA;
+  padding: 15px;
+  border-radius: 5px;
+}
+
 @media only screen and (max-width: 500px) {
   .review-slider .slick-slide > div {
     margin: 0 5px;

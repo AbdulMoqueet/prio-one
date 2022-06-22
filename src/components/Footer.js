@@ -26,19 +26,22 @@ const IconBox = styled(Link)({
 })
 
 const CustomLink = styled(Link)({
-    color: "#000",
+    color: "#1C2B49B2",
+    fontWeight: "500",
     textDecoration: "none",
     "&:hover": { color: "#F46853" }
 })
 
 const Footer = () => {
     return (
-        <Box pt="80px">
+        <Box pt="80px" sx={{
+            display: {xs:"none", md:"block"}
+        }}>
             <Box sx={{
                 height: "2px",
                 background: "#C25A3F"
             }}></Box>
-            <Container sx={{ padding: "50px 0" }}>
+            <Container sx={{ padding: "50px 0", color: "#1C2B49" }}>
 
                 <Grid container>
 
@@ -58,7 +61,7 @@ const Footer = () => {
                         <FlexBox>
                             <Typography fontSize="20px">Find us on Social media</Typography>
 
-                            <Stack flexDirection="row" gap="10px">
+                            <Stack flexDirection="row" gap="30px">
 
                                 <IconBox to="#">
                                     <BsInstagram />
@@ -94,14 +97,14 @@ const Footer = () => {
                     marginTop: "30px",
                     textAlign: "center"
                 }}>
-                    <Typography fontSize={{xs:"24px", md:"24px"}}>
+                    <Typography fontSize="24px">
                         Medizinsche Aufsichtsbehörde
                     </Typography>
 
                     <Stack sx={{
-                        flexDirection: { xs: "column", md: "row" },
+                        flexDirection: "row",
                         justifyContent: "center",
-                        gap: "30px",
+                        gap: "60px",
                         alignItems: "center",
                         marginTop: "20px"
                     }}>

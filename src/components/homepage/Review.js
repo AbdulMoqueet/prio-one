@@ -55,7 +55,7 @@ const Review = () => {
     return (
         <Box py="80px">
 
-            <Typography mt={6} textAlign="center" fontSize="28px">From real customers</Typography>
+            <Typography mt={12} mb={14} textAlign="center" fontSize="28px">From real customers</Typography>
 
             <Grid container mt={5}>
 

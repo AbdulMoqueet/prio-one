@@ -14,8 +14,17 @@ const Divider = styled(Box)({
 })
 
 const CustomLink = styled(Link)({
+    position: "relative",
+    zIndex: 10,
     color: "#fff",
     textDecoration: "none",
+    "&:hover": { color: "#F46853" }
+})
+
+const HeadingLink = styled(Link)({
+    color: "#fff",
+    textDecoration: "none",
+    fontSize: "24px",
     "&:hover": { color: "#F46853" }
 })
 
@@ -113,7 +122,7 @@ const NavBar = ({ linkStyle, buttonStyle, dividerStyle, mobileStyle }) => {
                     alignItems: "center",
                     gap: 3
                 }}>
-                    <CustomLink sx={linkStyle} to="/" variant='h6'>Prio.one</CustomLink>
+                    <HeadingLink sx={linkStyle} to="/" variant='h6'>Prio.one</HeadingLink>
                     <CustomLink sx={linkStyle} to="/products">Unser Service</CustomLink>
                     <Divider sx={dividerStyle} />
                     <CustomLink sx={linkStyle} to="/products">Über uns</CustomLink>
@@ -132,38 +141,55 @@ const NavBar = ({ linkStyle, buttonStyle, dividerStyle, mobileStyle }) => {
 
                         <Box className='hoverBox' sx={{
                             position: "absolute",
-                            background: "#fff",
-                            display: "flex",
-                            flexDirection: "column",
-                            gap: "10px",
-                            padding: "20px",
-                            borderRadius: "10px",
-                            top: "30px",
+                            top:0,
                             left: "-25px",
-                            width: "150px",
+                            width: "100px",
+                            height: "150px",
                             display: "none"
                         }}>
 
-                            <Box sx={{
-                                color: "#1C2B49CC",
-                                textDecoration: "none",
-                                cursor: "pointer",
-                                "&:hover": { color: "#F46853" }
-                            }}>Unser Blog</Box>
 
                             <Box sx={{
-                                color: "#1C2B49CC",
-                                textDecoration: "none",
-                                cursor: "pointer",
-                                "&:hover": { color: "#F46853" }
-                            }}>Für Ärzte</Box>
+                                marginTop: "30px",
+                                background: "#fff",
+                                display: "flex",
+                                flexDirection: "column",
+                                gap: "10px",
+                                padding: "20px",
+                                borderRadius: "10px",
+                                top: "30px",
+                                left: "-25px",
+                                width: "180px",
+                            }}>
 
-                            <Box sx={{
-                                color: "#1C2B49CC",
-                                textDecoration: "none",
-                                cursor: "pointer",
-                                "&:hover": { color: "#F46853" }
-                            }}>prio.one Community</Box>
+                                <Box sx={{
+                                    color: "#1C2B49CC",
+                                    textDecoration: "none",
+                                    cursor: "pointer",
+                                    "&:hover": { color: "#F46853" }
+                                }}>Unser Blog</Box>
+
+                                <Box sx={{
+                                    color: "#1C2B49CC",
+                                    textDecoration: "none",
+                                    cursor: "pointer",
+                                    "&:hover": { color: "#F46853" }
+                                }}>Für Ärzte</Box>
+
+                                <Box sx={{
+                                    color: "#1C2B49CC",
+                                    textDecoration: "none",
+                                    cursor: "pointer",
+                                    "&:hover": { color: "#F46853" },
+                                    display: "flex",
+                                    alignItems: "center",
+                                    gap: "10px"
+                                }}>prio.one Community
+
+                                    <img width="15px" src="./lock.svg" />
+                                </Box>
+
+                            </Box>
 
                         </Box>
 
@@ -177,7 +203,7 @@ const NavBar = ({ linkStyle, buttonStyle, dividerStyle, mobileStyle }) => {
                     alignItems: "center",
                     gap: 3
                 }}>
-                    <Typography variant='p' component="p">Login</Typography>
+                    <CustomLink sx={linkStyle} to="#" >Login</CustomLink>
 
                     <StyledButton text="Los geht’s" sx={buttonStyle} />
 
